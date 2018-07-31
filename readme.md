@@ -32,4 +32,6 @@
 
 ####14. MongoDB 실행 후 락걸리는 현상을 발견했다. 잘되던 놈이 안되는 이유는 락이 걸린거였다.해결방법은 : sudo mkdir -p /data/db -> sudo chown `id -u` /data/db 2개의 명령어 실행으로 마무리
 
-####15. 락걸린 파일을 지우고 다시 실행이라는데, 해보니 잘된다. 근데 저렇게 매번 해야하는건가?, 그리고 실사용으로 저렇게 락이 걸리면 어덯하지?
+####15. 락걸린 파일을 지우고 다시 실행이라는데, 해보니 잘된다. 근데 저렇게 매번 해야하는건가?, 그리고 실사용으로 저렇게 락이 걸리면 어덯하지? 고민해보자
+
+####16. MongoDB 사용 시 "(node:2110) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrl"이런 에러가 뜰때는 어떻게 하는가? 바로 연결문에서 MongoClient.connect(url, {useNewUrlParser : true},  << 추가해준다.
